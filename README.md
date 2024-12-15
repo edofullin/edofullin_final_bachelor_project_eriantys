@@ -1,10 +1,10 @@
 # Eriantys 
 
 > [!IMPORTANT]  
-> This is **NOT** the repo that was used for development, as that contains copyrighted material by CRANIO that they did not allow us to share. Because of this, trying to compile the project will fail since it misses the required resources. The final deliverable executables where also removed, together with intermediate assignments containing details of other students from other groups.
+> This is **NOT** the repo that was used for development, as that contains copyrighted material by CRANIO that they did not allow us to share. Because of this, trying to compile the project will fail since it misses the required resources. The final deliverable executables were also removed, together with intermediate assignments containing details of other students from other groups.
 
 > [!IMPORTANT]  
-> This repo is for consultation only, no more changes will ever me made to the codebase.
+> This repo is for consultation only, no more changes will ever be made to the codebase.
 
 > [!NOTE]  
 > As bachelor-level courses are in Italian, most documentation and comments in the code are also written in Italian. Sorry.
