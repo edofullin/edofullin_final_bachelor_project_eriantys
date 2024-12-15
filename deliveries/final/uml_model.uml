@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/edoardo/Code/ing-sw-2022-fullin-gazzola-groppi/src/main/java/it/polimi/ingsw/model</OriginalElement>
+  <nodes>
+    <node x="4216.184190708602" y="-29.29224313498395">it.polimi.ingsw.model.Canteen</node>
+    <node x="2680.329923656559" y="-375.3417758629983">it.polimi.ingsw.model.characters.CharacterCard</node>
+    <node x="3463.4923479587123" y="947.3661826896038">it.polimi.ingsw.model.Cloud</node>
+    <node x="3319.259160349514" y="-449.5076491714826">it.polimi.ingsw.model.SPColor</node>
+    <node x="2684.6355154844205" y="-879.7983022001068">it.polimi.ingsw.model.characters.CharacterEnum</node>
+    <node x="4017.294801040606" y="678.9842506192401">it.polimi.ingsw.model.Archipelago</node>
+    <node x="3125.825057127044" y="-879.798302200107">it.polimi.ingsw.model.CardStack</node>
+    <node x="4213.184190708602" y="-360.3865012116752">it.polimi.ingsw.model.PlayerBoard</node>
+    <node x="3507.87574537499" y="-879.798302200107">it.polimi.ingsw.model.Player</node>
+    <node x="3701.6405477987196" y="-491.93784680330947">it.polimi.ingsw.model.Game</node>
+    <node x="2222.4459738417972" y="-97.3503350289846">it.polimi.ingsw.model.characters.CentaurCharacter</node>
+    <node x="2222.4459738417972" y="-1063.1642647525987">it.polimi.ingsw.model.characters.JokerCharacter</node>
+    <node x="2222.4459738417972" y="93.14110580502904">it.polimi.ingsw.model.characters.KnightCharacter</node>
+    <node x="4614.4732999012485" y="342.7375037001342">it.polimi.ingsw.model.TowerColor</node>
+    <node x="3463.4923479587123" y="1.434330896255517">it.polimi.ingsw.model.Board</node>
+    <node x="2222.4459738417972" y="-795.7487407248053">it.polimi.ingsw.model.characters.MessengerCharacter</node>
+    <node x="2222.4459738417972" y="-362.84177586299825">it.polimi.ingsw.model.characters.LadyCharacter</node>
+    <node x="2222.4459738417972" y="-603.333216697012">it.polimi.ingsw.model.characters.HerbalistCharacter</node>
+    <node x="3149.825057127044" y="-660.2918319583395">it.polimi.ingsw.model.AssistCard</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="it.polimi.ingsw.model.characters.KnightCharacter" target="it.polimi.ingsw.model.Player" relationship="TO_ONE">
+      <point x="-127.0" y="0.0" />
+      <point x="2189.946" y="161.64110580502904" />
+      <point x="2189.946" y="-1080.6642647525987" />
+      <point x="3618.876" y="-1080.6642647525987" />
+      <point x="-14.999745374989743" y="-168.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-236.0" y="-443.5" />
+      <point x="48.73318760919847" y="55.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.MessengerCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="127.00002615820267" y="-2.5927519470769766E-4" />
+      <point x="2579.0" y="-739.749" />
+      <point x="2579.0" y="-407.99999999999994" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Player" target="it.polimi.ingsw.model.PlayerBoard" relationship="TO_ONE">
+      <point x="126.00025462501026" y="3.022001069439284E-4" />
+      <point x="4136.0" y="-711.298" />
+      <point x="4136.0" y="-229.387" />
+      <point x="-130.50019070860162" y="-4.987883248190883E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.Player" relationship="TO_ONE">
+      <point x="-15.0" y="-131.0" />
+      <point x="4328.684190708602" y="-726.298" />
+      <point x="126.0" y="-14.999697799893056" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.CardStack" target="it.polimi.ingsw.model.Player" relationship="TO_ONE">
+      <point x="124.0" y="-14.999697799893056" />
+      <point x="-126.0" y="-102.49969779989306" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Player" target="it.polimi.ingsw.model.CardStack" relationship="TO_ONE">
+      <point x="75.26525462501013" y="168.50030220010694" />
+      <point x="3709.141" y="-509.438" />
+      <point x="3668.0" y="-509.438" />
+      <point x="3668.0" y="-270.5" />
+      <point x="3132.325" y="-270.5" />
+      <point x="-117.50005712704433" y="81.00030220010694" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Cloud" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-122.00034795871215" y="-1.8268960377554322E-4" />
+      <point x="3405.0" y="1003.366" />
+      <point x="3405.0" y="-285.5" />
+      <point x="3424.5" y="-285.5" />
+      <point x="2.240839650486123" y="54.999649171482645" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Canteen" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-1.907086016217363E-4" y="93.50024313498395" />
+      <point x="4345.184" y="1076.866" />
+      <point x="3405.0" y="1076.866" />
+      <point x="3405.0" y="-285.5" />
+      <point x="3424.5" y="-285.5" />
+      <point x="2.240839650486123" y="54.999649171482645" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.PlayerBoard" relationship="CREATE">
+      <point x="243.5" y="-15.0" />
+      <point x="4039.794801040606" y="429.9343308962555" />
+      <point x="4039.794801040606" y="-244.387" />
+      <point x="-130.5" y="-15.000498788324819" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.HerbalistCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="2.615820267237723E-5" y="81.00021669701192" />
+      <point x="2349.446" y="-408.0" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.Cloud" relationship="TO_MANY">
+      <point x="-7.0" y="443.49999999999994" />
+      <point x="114.5" y="-56.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.TowerColor" relationship="TO_MANY">
+      <point x="130.49980929139838" y="14.999501211675181" />
+      <point x="4551.0" y="-214.387" />
+      <point x="4551.0" y="410.238" />
+      <point x="-115.00031151565054" y="4.962998658015749E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="TO_MANY">
+      <point x="-243.5" y="30.0" />
+      <point x="2807.329923656559" y="474.9343308962555" />
+      <point x="0.0" y="106.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Archipelago" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-27.794801040606217" y="-168.5" />
+      <point x="4121.0" y="-524.438" />
+      <point x="3422.259160349514" y="-524.438" />
+      <point x="0.0" y="-55.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.KnightCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="127.00002615820267" y="-1.058050290509982E-4" />
+      <point x="2579.0" y="161.641" />
+      <point x="2579.0" y="-407.99999999999994" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.JokerCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="127.00002615820267" y="2.647525986958499E-4" />
+      <point x="2579.0" y="-969.664" />
+      <point x="2579.0" y="-407.99999999999994" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.LadyCharacter" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-14.999973841797328" y="-93.50022413700174" />
+      <point x="2334.446" y="-391.0" />
+      <point x="3157.325" y="-391.0" />
+      <point x="3157.325" y="-408.0" />
+      <point x="-103.00016034951386" y="-13.492350828517374" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.Canteen" relationship="CREATE">
+      <point x="31.49980929139838" y="131.0" />
+      <point x="29.99980929139838" y="-93.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.LadyCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="2.615820267237723E-5" y="-93.50022413700174" />
+      <point x="2349.446" y="-408.0" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.JokerCharacter" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="-126.99997384179733" y="2.647525986958499E-4" />
+      <point x="2204.946" y="-969.664" />
+      <point x="2204.946" y="-391.0" />
+      <point x="3157.325" y="-391.0" />
+      <point x="3157.325" y="-408.0" />
+      <point x="-103.00016034951386" y="-13.492350828517374" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.Archipelago" relationship="TO_MANY">
+      <point x="243.5" y="402.5499197229846" />
+      <point x="-131.5" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.PlayerBoard" relationship="TO_MANY">
+      <point x="243.5" y="0.0" />
+      <point x="4069.794801040606" y="444.9343308962555" />
+      <point x="4069.794801040606" y="-214.387" />
+      <point x="-130.5" y="14.999501211675181" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.CardStack" relationship="TO_MANY">
+      <point x="-243.5" y="15.0" />
+      <point x="3102.325" y="459.9343308962555" />
+      <point x="3102.325" y="-813.798302200107" />
+      <point x="-124.0" y="-15.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.Player" relationship="CREATE">
+      <point x="-30.0" y="-131.0" />
+      <point x="4313.684190708602" y="-696.298" />
+      <point x="126.0" y="15.000302200106944" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.Cloud" relationship="CREATE">
+      <point x="-121.5" y="443.49999999999994" />
+      <point x="0.0" y="-56.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.Canteen" relationship="TO_ONE">
+      <point x="16.49980929139838" y="131.0" />
+      <point x="14.999809291398378" y="-93.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.CardStack" target="it.polimi.ingsw.model.Player" relationship="CREATE">
+      <point x="124.0" y="-29.999697799893056" />
+      <point x="-126.0" y="-117.49969779989306" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Game" target="it.polimi.ingsw.model.Player" relationship="TO_MANY">
+      <point x="4.522012804955011E-4" y="-206.00015319669052" />
+      <point x="3854.141" y="-952.0" />
+      <point x="3633.876" y="-952.0" />
+      <point x="2.5462501025685924E-4" y="-168.49969779989306" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.characters.CentaurCharacter" target="it.polimi.ingsw.model.characters.CharacterCard" relationship="GENERALIZATION">
+      <point x="127.00002615820267" y="3.3502898460113784E-4" />
+      <point x="2579.0" y="-41.35" />
+      <point x="2579.0" y="-407.99999999999994" />
+      <point x="2807.33" y="-408.0" />
+      <point x="7.634344092366518E-5" y="-106.00022413700168" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Archipelago" target="it.polimi.ingsw.model.TowerColor" relationship="TO_ONE">
+      <point x="131.50019895939386" y="-2.506192400915097E-4" />
+      <point x="4551.0" y="847.484" />
+      <point x="4551.0" y="410.238" />
+      <point x="-115.00031151565054" y="4.962998658015749E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.PlayerBoard" target="it.polimi.ingsw.model.SPColor" relationship="TO_MANY">
+      <point x="130.49980929139838" y="-4.987883248190883E-4" />
+      <point x="4491.684" y="-229.387" />
+      <point x="4491.684" y="1076.866" />
+      <point x="3405.0" y="1076.866" />
+      <point x="3405.0" y="-285.5" />
+      <point x="3424.5" y="-285.5" />
+      <point x="2.240839650486123" y="54.999649171482645" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.Archipelago" relationship="CREATE">
+      <point x="243.5" y="417.5499197229846" />
+      <point x="-131.5" y="15.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Game" target="it.polimi.ingsw.model.Board" relationship="CREATE">
+      <point x="0.0" y="206.0" />
+      <point x="147.14819984000724" y="-443.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Board" target="it.polimi.ingsw.model.CardStack" relationship="CREATE">
+      <point x="-243.5" y="0.0" />
+      <point x="3117.325" y="444.9343308962555" />
+      <point x="3117.325" y="-798.798302200107" />
+      <point x="-124.0" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Player" target="it.polimi.ingsw.model.TowerColor" relationship="TO_ONE">
+      <point x="126.00025462501026" y="-29.999697799893056" />
+      <point x="4551.0" y="-741.298" />
+      <point x="4551.0" y="410.238" />
+      <point x="-115.00031151565054" y="4.962998658015749E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.CardStack" target="it.polimi.ingsw.model.AssistCard" relationship="TO_MANY">
+      <point x="123.99994287295567" y="3.022001069439284E-4" />
+      <point x="3441.0" y="-798.798" />
+      <point x="3441.0" y="-579.292" />
+      <point x="111.99994287295567" y="-1.680416605722712E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.model.Player" target="it.polimi.ingsw.model.AssistCard" relationship="TO_MANY">
+      <point x="-125.99974537498974" y="3.022001069439284E-4" />
+      <point x="3441.0" y="-711.298" />
+      <point x="3441.0" y="-579.292" />
+      <point x="111.99994287295567" y="-1.680416605722712E-4" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4621082009446119" showDependencies="true" x="2859.446853426247" y="-183.93248780487875" />
+  <SelectedNodes>
+    <node>it.polimi.ingsw.model.Board</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

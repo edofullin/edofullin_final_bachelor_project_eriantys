@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="387.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.JoinCreateGameController">
+   <children>
+      <RadioButton fx:id="rbtJoin" layoutX="19.0" layoutY="24.0" mnemonicParsing="false" selected="true" text="Join Existing Game">
+         <toggleGroup>
+            <ToggleGroup fx:id="rbtJoinCreate" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbtCreate" layoutX="20.0" layoutY="165.0" mnemonicParsing="false" text="Create New Game" toggleGroup="$rbtJoinCreate" />
+      <ComboBox fx:id="cmbGames" layoutX="123.0" layoutY="53.0" prefHeight="26.0" prefWidth="227.0" />
+      <Text layoutX="30.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Lobby:" />
+      <Text layoutX="30.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lobby Name:" />
+      <TextField fx:id="txtLobbyName" layoutX="123.0" layoutY="195.0" prefHeight="26.0" prefWidth="227.0" />
+      <Text layoutX="31.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lobby Size:" />
+      <RadioButton fx:id="rbt2players" layoutX="124.0" layoutY="234.0" mnemonicParsing="false" text="2 players" selected="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="rbtSize" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbt3players" layoutX="219.0" layoutY="234.0" mnemonicParsing="false" text="3 players" toggleGroup="$rbtSize" />
+      <CheckBox fx:id="chkExpert" layoutX="63.0" layoutY="271.0" mnemonicParsing="false" text="Expert Mode" />
+      <Button fx:id="btnOK" layoutX="84.0" layoutY="317.0" mnemonicParsing="false" onAction="#buttonOKClicked" prefHeight="33.0" prefWidth="81.0" text="OK" />
+      <Button fx:id="btnCancel" layoutX="196.0" layoutY="317.0" mnemonicParsing="false" onAction="#buttonCancelClicked" prefHeight="33.0" prefWidth="81.0" text="Cancel" />
+      <RadioButton fx:id="rbtDiskJoin" layoutX="19.0" layoutY="94.0" mnemonicParsing="false" text="Load unfinished game from disk" toggleGroup="$rbtJoinCreate" />
+      <Text layoutX="30.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Lobby:" />
+      <ComboBox fx:id="cmbDiskGames" layoutX="123.0" layoutY="123.0" prefHeight="26.0" prefWidth="227.0" />
+      <CheckBox fx:id="chkSaveDisk" layoutX="201.0" layoutY="271.0" mnemonicParsing="false" text="Save to disk" />
+   </children>
+</AnchorPane>

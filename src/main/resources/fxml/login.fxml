@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1066.0" style="-fx-background-color: black;" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.LoginScreenController">
+    <children>
+
+        <Label layoutX="454.0" fx:id="eriantysName" layoutY="26.0" prefHeight="155.0" prefWidth="194.0" text="Eriantys" textAlignment="CENTER" textFill="WHITE"/>
+
+        <Button fx:id="startButton" layoutX="488.0" layoutY="433.0" mnemonicParsing="false" onAction="#startGame" prefHeight="35.0" prefWidth="127.0" text="Connect" />
+
+        <TextField fx:id="txtIPAddress" layoutX="428.0" layoutY="310.0" prefHeight="24.0" prefWidth="246.0" promptText="Server IP Address" text="127.0.0.1" />
+        <TextField fx:id="txtNickName" accessibleHelp="vacci piano" layoutX="428.0" layoutY="343.0" prefHeight="24.0" prefWidth="246.0" promptText="Nickname" />
+        <ComboBox fx:id="cmbMagicians" layoutX="428.0" layoutY="374.0" prefHeight="24.0" prefWidth="246.0" promptText="Magician" visibleRowCount="5" />
+      <Button fx:id="btnStartServer" layoutX="14.0" layoutY="551.0" mnemonicParsing="false" onAction="#startServerClicked" prefHeight="35.0" prefWidth="127.0" text="Start Server" />
+      <CheckBox fx:id="chkBroadcaster" layoutX="14.0" layoutY="518.0" mnemonicParsing="false" onAction="#broadcasterChanged" text="Automatically detect server IP" />
+    </children>
+</Pane>

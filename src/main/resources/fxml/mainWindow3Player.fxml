@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneMain" centerShape="false" stylesheets="@../css/mainWindow3Player.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.MainWindowController">
+
+    <children>
+        <GridPane fx:id="gridPaneMain" gridLinesVisible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="25.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="25.0" />
+                <ColumnConstraints hgrow="NEVER" percentWidth="25.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="30.0" vgrow="NEVER" />
+                <RowConstraints percentHeight="40.0" vgrow="NEVER" />
+                <RowConstraints percentHeight="30.0" vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+            <GridPane fx:id="TopPB1" gridLinesVisible="false" layoutX="10.0" layoutY="10.0" stylesheets="@../css/mainWindow3Player.css" GridPane.columnIndex="2" GridPane.columnSpan="2">
+               <columnConstraints>
+                  <ColumnConstraints percentWidth="16.32" />
+                  <ColumnConstraints percentWidth="62.46" />
+                  <ColumnConstraints percentWidth="21.22" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane fx:id="ingressoYourPB11OppPB" gridLinesVisible="false" style="-fx-padding: 23pt 15pt 23pt 17pt;" GridPane.columnIndex="0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                        <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                        <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                        <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                        <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="mensaYourPB11" gridLinesVisible="false" style="-fx-padding: 25 30 25 20;" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="torriYourPB11" gridLinesVisible="false" style="-fx-padding: 40pt 12pt 40pt 13pt;" GridPane.columnIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </GridPane>
+
+
+                <GridPane fx:id="TopPB" gridLinesVisible="false" GridPane.columnSpan="2">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="16.32" />
+                        <ColumnConstraints percentWidth="62.46" />
+                        <ColumnConstraints percentWidth="21.22" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane fx:id="ingressoYourPB1" gridLinesVisible="false" style="-fx-padding: 23pt 15pt 23pt 17pt;" GridPane.columnIndex="0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                            </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="mensaYourPB1" gridLinesVisible="false" style="-fx-padding: 25 30 25 20;" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="torriYourPB1" gridLinesVisible="false" style="-fx-padding: 40pt 12pt 40pt 13pt;" GridPane.columnIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <GridPane fx:id="yourPB" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="16.32" />
+                        <ColumnConstraints percentWidth="62.46" />
+                        <ColumnConstraints percentWidth="21.22" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane fx:id="ingressoYourPB" gridLinesVisible="false" GridPane.columnIndex="0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="50" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                                <RowConstraints prefHeight="54.0" vgrow="NEVER" />
+                            </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="mensaYourPB" gridLinesVisible="false" onMouseClicked="#paneCanteenClicked" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="8.33" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="torriYourPB" gridLinesVisible="false" GridPane.columnIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="61.0" prefWidth="61.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </GridPane>
+
+
+                <Pane fx:id="TopRight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <children>
+                        <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnExitClicked" text="EXIT" textOverrun="WORD_ELLIPSIS" />
+                        <Button layoutX="71.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnHandClicked" prefHeight="24.0" prefWidth="97.0" text="HAND" textOverrun="WORD_ELLIPSIS" />
+                        <Button layoutX="71.0" layoutY="60.0" mnemonicParsing="false" onAction="#btnFullscreenClicked" prefHeight="25.0" prefWidth="97.0" text="FULLSCREEN" textOverrun="WORD_ELLIPSIS" />
+                  <Label fx:id="lblStatus" layoutX="20.0" layoutY="126.0" prefHeight="34.0" prefWidth="412.0" text="Waiting for other players..." textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="71.0" layoutY="95.0" mnemonicParsing="false" onAction="#btnRefreshViewClicked" prefHeight="25.0" prefWidth="97.0" text="REFRESH" textOverrun="WORD_ELLIPSIS" />
+                    </children>
+                </Pane>
+            <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Pane fx:id="topLeft" layoutX="10.0" layoutY="97.0" GridPane.columnIndex="3">
+                    <children>
+                        <HBox fx:id="OpponentCharacters" spacing="10" />
+                    </children>
+                </Pane>
+                <GridPane fx:id="yourCharacters" maxWidth="429.0" minWidth="0" prefHeight="269.0" prefWidth="429.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints percentHeight="80.0" valignment="TOP" vgrow="NEVER" />
+                        <RowConstraints percentHeight="20.0" valignment="TOP" vgrow="NEVER" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="btnCharacterNO" mnemonicParsing="false" onAction="#btnCharacterNoClicked" text="NO" visible="false" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button fx:id="btnCharacterNOGFY" mnemonicParsing="false" onAction="#btnCharacterNoGFYClicked" text="NOT THIS TURN" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                    </children>
+                </GridPane>
+
+                <GridPane fx:id="Clouds" GridPane.rowIndex="2">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="34.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                  <GridPane fx:id="gp_cloud_0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                              <GridPane fx:id="gridCloud0" gridLinesVisible="false" onMouseClicked="#gridCloudClicked">
+                                  <columnConstraints>
+                                      <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                                      <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                                      <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                                  </rowConstraints>
+                              </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="gp_cloud_1" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                              <GridPane fx:id="gridCloud1" gridLinesVisible="false" onMouseClicked="#gridCloudClicked">
+                                  <columnConstraints>
+                                      <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                                      <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                                      <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                                  </rowConstraints>
+                              </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="gp_cloud_2" GridPane.columnIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane fx:id="gridCloud2" gridLinesVisible="false" onMouseClicked="#gridCloudClicked">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                              <ColumnConstraints hgrow="NEVER" minWidth="10.0" percentWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                              <RowConstraints minHeight="10.0" percentHeight="50.0" vgrow="NEVER" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                    </children>
+                </GridPane>
+                <Pane fx:id="ISLANDS" prefHeight="278.0" prefWidth="732.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <GridPane fx:id="OppPB1_3p" layoutX="1605.0" layoutY="638.0" minWidth="0" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" percentWidth="33.3" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints percentHeight="90.0" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints percentHeight="10.0" valignment="CENTER" vgrow="NEVER" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="yourName" alignment="CENTER" contentDisplay="CENTER" text="You" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></Label>
+                  <Label fx:id="opp1Name" contentDisplay="CENTER" text="Opponent 1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></Label>
+                  <Label fx:id="oppName" contentDisplay="CENTER" text="Opponent 2" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></Label>
+                   <Pane fx:id="OPPB1_3p_DC1" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                       <ImageView fx:id="ivAssistRight" fitHeight="${OPPB1_3p_DC1.height}" fitWidth="${OPPB1_3p_DC1.width}" layoutY="55" pickOnBounds="true" preserveRatio="true" />
+                   </Pane>
+                   <Pane fx:id="OPPB1_3p_DC2" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                       <ImageView fx:id="ivAssistMiddle" fitHeight="${OPPB1_3p_DC1.height}" fitWidth="${OPPB1_3p_DC1.width}" layoutY="55" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                   </Pane>
+                   <Pane fx:id="OPPB1_3p_DC3" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                       <ImageView fx:id="ivAssistLeft" fitHeight="${OPPB1_3p_DC3.height}" fitWidth="${OPPB1_3p_DC3.width}" layoutY="55" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                   </Pane>
+                  <StackPane fx:id="spMyCoins" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <image>
+                              <Image url="@../img/coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblMyCoins" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="30.0" text="0" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </StackPane>
+                  <StackPane fx:id="spOppCoins" layoutX="10.0" layoutY="333.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <image>
+                              <Image url="@../img/coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblOpp1Coins" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="30.0" text="0" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane fx:id="spOpp1Coins" layoutX="10.0" layoutY="10.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <image>
+                              <Image url="@../img/coin.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblOppCoins" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="30.0" text="0" StackPane.alignment="CENTER_LEFT">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </GridPane>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

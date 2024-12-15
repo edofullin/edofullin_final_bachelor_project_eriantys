@@ -1,0 +1,8 @@
+{
+  "clientKeepAliveInterval": 30,
+  "clientKeepAliveDead": 60,
+  "enableDiskSave": true,
+  "broadcasterInterval": 5,
+  "clientBroadcasterDefault": false,
+  "serverBroadcasterEnabled": true
+}

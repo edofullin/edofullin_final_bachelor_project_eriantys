@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<ScrollPane hbarPolicy="ALWAYS" prefHeight="250.0" maxHeight="260.0" fitToHeight="true" prefWidth="897.0" vbarPolicy="NEVER" pannable="true" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.AssistantSelectorController">
+   <content>
+      <HBox fx:id="cardsBox" prefHeight="230.0" prefWidth="896.0" />
+   </content>
+</ScrollPane>

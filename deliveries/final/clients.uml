@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>it.polimi.ingsw.client.gui.IslandController</OriginalElement>
+  <nodes>
+    <node x="-288.08989277171804" y="72.88499352675444">it.polimi.ingsw.client.gui.LoginScreenController</node>
+    <node x="1252.847116543779" y="-890.8568590764123">it.polimi.ingsw.client.NetworkManager</node>
+    <node x="-911.2791123722409" y="717.2830647798355">it.polimi.ingsw.client.gui.JoinCreateGameController</node>
+    <node x="649.1434722138239" y="-890.8568590764123">it.polimi.ingsw.client.GameManager</node>
+    <node x="-305.96132897631253" y="257.87684937980066">it.polimi.ingsw.client.gui.MainWindowController</node>
+    <node x="-755.2791123722409" y="562.5799570798181">it.polimi.ingsw.client.gui.IslandController</node>
+    <node x="971.213101165819" y="671.7761739216929">it.polimi.ingsw.client.cli.EscapeCode</node>
+    <node x="-894.4050936212504" y="257.87684937980066">it.polimi.ingsw.client.gui.CharacterColorDialogController</node>
+    <node x="720.8144482676734" y="-177.11500647324556">it.polimi.ingsw.client.IView</node>
+    <node x="238.72046250912865" y="-628.3568590764123">it.polimi.ingsw.client.Broadcaster</node>
+    <node x="-1004.2791123722409" y="1046.986172479853">it.polimi.ingsw.client.gui.AssistantSelectorController</node>
+    <node x="824.1837689512294" y="468.9353557718866">it.polimi.ingsw.client.cli.CliApp</node>
+    <node x="495.8143108282212" y="680.8310029904561">it.polimi.ingsw.client.cli.CliView</node>
+    <node x="-305.9613289763126" y="967.5272671194812">it.polimi.ingsw.client.gui.GUIResourcesManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="it.polimi.ingsw.client.GameManager" target="it.polimi.ingsw.client.NetworkManager" relationship="CREATE">
+      <point x="260.4999999999999" y="-212.5" />
+      <point x="-154.5" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.cli.CliView" target="it.polimi.ingsw.client.IView" relationship="REALIZATION">
+      <point x="-207.5003108282212" y="-2.990456096085836E-6" />
+      <point x="303.0" y="923.331" />
+      <point x="303.0" y="2.885" />
+      <point x="-207.5004482676734" y="6.473245557359064E-6" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.GameManager" target="it.polimi.ingsw.client.NetworkManager" relationship="TO_ONE">
+      <point x="260.4999999999999" y="-197.5" />
+      <point x="-154.5" y="15.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.cli.CliApp" target="it.polimi.ingsw.client.cli.CliView" relationship="CREATE">
+      <point x="-23.369458123008144" y="42.50000000000006" />
+      <point x="185.0" y="-242.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.cli.CliView" target="it.polimi.ingsw.client.GameManager" relationship="TO_ONE">
+      <point x="-3.1082822124517406E-4" y="-242.5000029904561" />
+      <point x="-206.32947221382392" y="317.49985907641235" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.gui.LoginScreenController" target="it.polimi.ingsw.client.GameManager" relationship="CREATE">
+      <point x="143.99989277171804" y="6.473245562688135E-6" />
+      <point x="558.0" y="127.885" />
+      <point x="558.0" y="-573.357" />
+      <point x="-260.50047221382385" y="-1.409235876508319E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.gui.LoginScreenController" target="it.polimi.ingsw.client.GameManager" relationship="TO_ONE">
+      <point x="-1.0722828196207956E-4" y="55.00000647324555" />
+      <point x="-144.09" y="221.0" />
+      <point x="703.314" y="221.0" />
+      <point x="-206.32947221382392" y="317.49985907641235" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.GameManager" target="it.polimi.ingsw.client.IView" relationship="TO_ONE">
+      <point x="18.670976053849472" y="317.5" />
+      <point x="0.0" y="-180.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.GameManager" target="it.polimi.ingsw.client.Broadcaster" relationship="TO_ONE">
+      <point x="-260.5" y="-15.00014092358765" />
+      <point x="89.0" y="-15.00014092358765" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.gui.MainWindowController" target="it.polimi.ingsw.client.IView" relationship="REALIZATION">
+      <point x="207.50032897631252" y="1.5062019929246162E-4" />
+      <point x="303.0" y="587.877" />
+      <point x="303.0" y="2.885" />
+      <point x="-207.5004482676734" y="6.473245557359064E-6" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.cli.CliView" target="it.polimi.ingsw.client.GameManager" relationship="CREATE">
+      <point x="-164.8143108282212" y="-242.5000029904561" />
+      <point x="538.5" y="265.377" />
+      <point x="558.0" y="265.377" />
+      <point x="558.0" y="-573.357" />
+      <point x="-260.50047221382385" y="-1.409235876508319E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.cli.CliApp" target="it.polimi.ingsw.client.cli.CliView" relationship="TO_ONE">
+      <point x="-8.369458123008144" y="42.50000000000006" />
+      <point x="200.0" y="-242.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.gui.MainWindowController" target="it.polimi.ingsw.client.GameManager" relationship="TO_ONE">
+      <point x="3.289763125309264E-4" y="-329.99984937980065" />
+      <point x="-98.461" y="221.0" />
+      <point x="703.314" y="221.0" />
+      <point x="-206.32947221382392" y="317.49985907641235" />
+    </edge>
+    <edge source="it.polimi.ingsw.client.GameManager" target="it.polimi.ingsw.client.Broadcaster" relationship="CREATE">
+      <point x="-260.5" y="-30.00014092358765" />
+      <point x="89.0" y="-30.00014092358765" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3750964187327824" showDependencies="true" x="772.7711286354288" y="256.70490599294953" />
+  <SelectedNodes>
+    <node>it.polimi.ingsw.client.Broadcaster</node>
+    <node>it.polimi.ingsw.client.cli.CliApp</node>
+    <node>it.polimi.ingsw.client.gui.IslandController</node>
+    <node>it.polimi.ingsw.client.gui.JoinCreateGameController</node>
+    <node>it.polimi.ingsw.client.cli.EscapeCode</node>
+    <node>it.polimi.ingsw.client.NetworkManager</node>
+    <node>it.polimi.ingsw.client.cli.CliView</node>
+    <node>it.polimi.ingsw.client.gui.GUIResourcesManager</node>
+    <node>it.polimi.ingsw.client.gui.AssistantSelectorController</node>
+    <node>it.polimi.ingsw.client.gui.LoginScreenController</node>
+    <node>it.polimi.ingsw.client.IView</node>
+    <node>it.polimi.ingsw.client.gui.CharacterColorDialogController</node>
+    <node>it.polimi.ingsw.client.GameManager</node>
+    <node>it.polimi.ingsw.client.gui.MainWindowController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

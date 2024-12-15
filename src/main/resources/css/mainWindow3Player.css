@@ -1,0 +1,112 @@
+
+#anchorPaneMain{
+    -fx-background-image: url("/img/mah.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+#yourPB{
+    -fx-background-image: url("/img/Plancia/Plancia_DEF.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#TopPB{
+    -fx-background-image: url("/img/Plancia/Plancia_DEF.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+}
+#TopPB1{
+    -fx-background-image: url("/img/Plancia/Plancia_DEF.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+
+}
+
+#ingressoYourPB{
+    -fx-padding: 18pt 10pt 18pt 12pt;
+}
+
+#torriYourPB{
+    -fx-padding: 40pt 12pt 40pt 13pt;
+}
+
+#mensaYourPB{
+    -fx-padding: 20 25 20 15;
+}
+#ingressoYourPB1 {
+    -fx-padding: 18pt 10pt 18pt 12pt;
+}
+
+#torriYourPB1{
+    -fx-padding: 40pt 12pt 40pt 13pt;
+}
+
+#mensaYourPB1{
+    -fx-padding: 20 25 20 15;
+}
+
+#anchorPaneMain{
+    -fx-background-color: #50afe5 ;
+}
+
+#Clouds {
+
+}
+#Clouds{
+
+}
+#gp_cloud_0{
+
+    -fx-background-image: url("/img/nuvola_tagliata.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto 75%;
+    -fx-background-position: center center;
+
+}
+#gp_cloud_1{
+
+    -fx-background-image: url("/img/nuvola_tagliata.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto 75%;
+    -fx-background-position: center center;
+
+}
+#gp_cloud_2{
+
+    -fx-background-image: url("/img/nuvola_tagliata.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto 75%;
+    -fx-background-position: center center;
+}
+#cloud_0{
+    -fx-padding: 65 65 60 70;
+
+}
+#gridCloud0{
+    -fx-padding: 65 10 60 15;
+
+}
+#gridCloud1{
+    -fx-padding: 65 10 60 15;
+
+}
+#gridCloud2{
+    -fx-padding: 65 10 60 15;
+
+}
+/*#OppPB1_3p{*/
+/*    -fx-padding: 65 65 60 60;*/
+/*}*/
+
+#OppPB2_3P{
+    -fx-padding: 65 65 60 60;
+}
+

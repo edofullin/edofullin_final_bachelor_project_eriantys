@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Zapfino';
+    src: url('/fonts/zapfino.ttf');
+}
+
+#eriantysName {
+    -fx-font-family: 'Zapfino';
+    -fx-font-size: 37;
+}
+
+#rootpane{
+    -fx-background-image: url("/img/eriantys_background.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1066 600;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}

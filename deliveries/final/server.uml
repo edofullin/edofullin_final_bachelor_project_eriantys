@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>it.polimi.ingsw.server.gamephases.PlayerTakesCloud</OriginalElement>
+  <nodes>
+    <node x="2883.702480224029" y="-665.2594732005225">it.polimi.ingsw.server.ServerApp</node>
+    <node x="3889.4565675917" y="341.44498728323106">it.polimi.ingsw.server.ClientMessageSubscriber</node>
+    <node x="3956.7226750301115" y="-553.248545989808">it.polimi.ingsw.server.TCPClient</node>
+    <node x="2169.0789333032044" y="1308.857478470039">it.polimi.ingsw.server.gamephases.GameEnded</node>
+    <node x="3868.8799688187282" y="-175.75857634953095">it.polimi.ingsw.server.TCPConnectionManager</node>
+    <node x="2169.0789333032044" y="884.7350432863959">it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature</node>
+    <node x="2159.383729450256" y="36.49017291910991">it.polimi.ingsw.server.gamephases.GameStarting</node>
+    <node x="2797.9884590936504" y="-143.15253330049345">it.polimi.ingsw.server.GameController</node>
+    <node x="2947.9884590936504" y="808.7350432863959">it.polimi.ingsw.network.GameSettings</node>
+    <node x="2155.0828557399627" y="672.6738256945744">it.polimi.ingsw.server.gamephases.PlayerMoveStudents</node>
+    <node x="3329.188473822435" y="-184.34603181624772">it.polimi.ingsw.server.IConnectionManager</node>
+    <node x="3319.827895340724" y="223.25992493054787">it.polimi.ingsw.server.MatchController</node>
+    <node x="4451.559409952566" y="-532.3294463626762">it.polimi.ingsw.server.Client</node>
+    <node x="3983.7226750301115" y="-800.7903667015444">it.polimi.ingsw.network.messages.Message</node>
+    <node x="2169.0789333032044" y="1096.7962608782175">it.polimi.ingsw.server.gamephases.PlayerTakesCloud</node>
+    <node x="2702.4414466481453" y="-544.687936961815">it.polimi.ingsw.server.Server</node>
+    <node x="3353.9159819300858" y="808.7350432863959">it.polimi.ingsw.server.GameSave</node>
+    <node x="3321.0536752196767" y="-536.4770226275766">it.polimi.ingsw.server.NetworkGamesManager</node>
+    <node x="2359.577570210499" y="-544.687936961815">it.polimi.ingsw.server.Configuration</node>
+    <node x="2159.383729450256" y="460.6126081027528">it.polimi.ingsw.server.gamephases.Preparation</node>
+    <node x="2686.247387004785" y="555.112812329203">it.polimi.ingsw.server.gamephases.IGamePhase</node>
+    <node x="2159.383729450256" y="248.55139051093136">it.polimi.ingsw.server.gamephases.SetUpTurn</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" target="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" relationship="CREATE">
+      <point x="-216.49993330320422" y="-2.6087821743203676E-4" />
+      <point x="2133.0" y="1164.296" />
+      <point x="2133.0" y="740.174" />
+      <point x="-216.49985573996264" y="1.7430542561669427E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Client" target="it.polimi.ingsw.server.ClientMessageSubscriber" relationship="TO_ONE">
+      <point x="-15.00040995256586" y="155.5" />
+      <point x="4657.559" y="371.44498728323106" />
+      <point x="193.0" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.GameStarting" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50027054974407" y="-1.7291910991446002E-4" />
+      <point x="2613.0" y="103.99" />
+      <point x="2613.0" y="437.5" />
+      <point x="2645.0" y="437.5" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.server.GameSave" relationship="TO_ONE">
+      <point x="-166.5" y="15.0" />
+      <point x="2653.747387004785" y="-22.652533300493445" />
+      <point x="2653.747387004785" y="1037.235043286396" />
+      <point x="-111.0" y="110.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.TCPClient" target="it.polimi.ingsw.network.messages.Message" relationship="TO_ONE">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.GameEnded" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50006669679578" y="-4.784700390700891E-4" />
+      <point x="2645.0" y="1376.357" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.GameStarting" target="it.polimi.ingsw.server.gamephases.SetUpTurn" relationship="CREATE">
+      <point x="2.705497440729232E-4" y="67.4998270808901" />
+      <point x="2.705497440729232E-4" y="-67.50039051093137" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Server" target="it.polimi.ingsw.server.NetworkGamesManager" relationship="CREATE">
+      <point x="-101.23896642411637" y="-168.0" />
+      <point x="2866.202480224029" y="-682.7594732005225" />
+      <point x="3465.5536752196767" y="-682.7594732005225" />
+      <point x="15.0" y="-30.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Server" target="it.polimi.ingsw.network.GameSettings" relationship="CREATE">
+      <point x="264.9995533518545" y="-6.303818497599423E-5" />
+      <point x="3255.0" y="-376.688" />
+      <point x="3255.0" y="914.235" />
+      <point x="91.49954090634947" y="-4.328639590767125E-5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.TCPClient" target="it.polimi.ingsw.server.Client" relationship="GENERALIZATION">
+      <point x="138.5" y="83.4190996271318" />
+      <point x="-221.0" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.NetworkGamesManager" target="it.polimi.ingsw.network.GameSettings" relationship="CREATE">
+      <point x="-129.49967521967665" y="-14.99997737242336" />
+      <point x="3255.0" y="-521.477" />
+      <point x="3255.0" y="914.235" />
+      <point x="91.49954090634947" y="-4.328639590767125E-5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.SetUpTurn" target="it.polimi.ingsw.server.gamephases.GameEnded" relationship="CREATE">
+      <point x="-216.49972945025593" y="-3.9051093136777126E-4" />
+      <point x="2096.5" y="316.051" />
+      <point x="2096.5" y="1331.357" />
+      <point x="2152.0" y="1331.357" />
+      <point x="2152.0" y="1376.357" />
+      <point x="-216.49993330320422" y="-4.784700390700891E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.server.IConnectionManager" relationship="TO_ONE">
+      <point x="166.49954090634947" y="-15.000466699506553" />
+      <point x="3299.0" y="-52.653" />
+      <point x="3299.0" y="-28.846000000000004" />
+      <point x="-221.00047382243474" y="3.181624771286806E-5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature" target="it.polimi.ingsw.server.Client" relationship="TO_ONE">
+      <point x="216.50006669679578" y="14.999956713604092" />
+      <point x="2629.0" y="967.235" />
+      <point x="2629.0" y="1062.235" />
+      <point x="4672.559" y="1062.235" />
+      <point x="-4.0995256586029427E-4" y="155.5004463626762" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Server" target="it.polimi.ingsw.server.GameController" relationship="CREATE">
+      <point x="-2.952987554494939" y="168.0" />
+      <point x="0.0" y="-105.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.Preparation" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50027054974407" y="3.918972472547466E-4" />
+      <point x="2613.0" y="528.113" />
+      <point x="2613.0" y="437.5" />
+      <point x="2645.0" y="437.5" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50006669679578" y="-4.328639590767125E-5" />
+      <point x="2645.0" y="952.235" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.network.GameSettings" relationship="CREATE">
+      <point x="166.49954090634947" y="14.999533300493447" />
+      <point x="3255.0" y="-22.653" />
+      <point x="3255.0" y="914.235" />
+      <point x="91.49954090634947" y="-4.328639590767125E-5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" target="it.polimi.ingsw.server.Client" relationship="TO_ONE">
+      <point x="216.50006669679578" y="14.999739121782568" />
+      <point x="2629.0" y="1179.296" />
+      <point x="2629.0" y="1062.235" />
+      <point x="4672.559" y="1062.235" />
+      <point x="-4.0995256586029427E-4" y="155.5004463626762" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.server.TCPConnectionManager" relationship="CREATE">
+      <point x="-166.5" y="0.0" />
+      <point x="2668.747387004785" y="-37.652533300493445" />
+      <point x="2668.747387004785" y="-712.7594732005225" />
+      <point x="3939.2226750301115" y="-712.7594732005225" />
+      <point x="-150.6572937886167" y="-155.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.TCPConnectionManager" target="it.polimi.ingsw.server.TCPClient" relationship="CREATE">
+      <point x="20.3427062113833" y="-155.5" />
+      <point x="15.0" y="93.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.ServerApp" target="it.polimi.ingsw.server.Server" relationship="CREATE">
+      <point x="-3.76103357588363" y="30.0" />
+      <point x="0.0" y="-168.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.GameStarting" target="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" relationship="CREATE">
+      <point x="-216.49972945025593" y="-1.7291910991446002E-4" />
+      <point x="2133.0" y="103.99" />
+      <point x="2133.0" y="740.174" />
+      <point x="-216.49985573996264" y="1.7430542561669427E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.SetUpTurn" target="it.polimi.ingsw.server.gamephases.Preparation" relationship="CREATE">
+      <point x="0.0" y="67.5" />
+      <point x="0.0" y="-67.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" target="it.polimi.ingsw.server.Client" relationship="TO_ONE">
+      <point x="216.50014426003736" y="-14.999825694574383" />
+      <point x="2629.0" y="725.174" />
+      <point x="2629.0" y="1062.235" />
+      <point x="4672.559" y="1062.235" />
+      <point x="-4.0995256586029427E-4" y="155.5004463626762" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.Preparation" target="it.polimi.ingsw.server.Client" relationship="TO_ONE">
+      <point x="216.50027054974407" y="-56.6126081027528" />
+      <point x="2629.0" y="471.5" />
+      <point x="2629.0" y="1062.235" />
+      <point x="4672.559" y="1062.235" />
+      <point x="-4.0995256586029427E-4" y="155.5004463626762" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.server.gamephases.GameStarting" relationship="CREATE">
+      <point x="80.58808658936186" y="218.0" />
+      <point x="3593.4159819300858" y="1461.357478470039" />
+      <point x="2081.5" y="1461.357478470039" />
+      <point x="2081.5" y="88.99" />
+      <point x="-216.5" y="-15.000172919109914" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.server.MatchController" relationship="TO_ONE">
+      <point x="15.0" y="105.5" />
+      <point x="2979.4884590936504" y="286.051" />
+      <point x="-193.0" y="-155.20892493054788" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.NetworkGamesManager" target="it.polimi.ingsw.server.Server" relationship="TO_ONE">
+      <point x="0.0" y="-30.0" />
+      <point x="3450.5536752196767" y="-570.748545989808" />
+      <point x="2982.4414466481453" y="-570.748545989808" />
+      <point x="15.0" y="-168.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Server" target="it.polimi.ingsw.server.NetworkGamesManager" relationship="TO_ONE">
+      <point x="265.0" y="-114.78906303818496" />
+      <point x="-129.5" y="15.00002262757664" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.Preparation" target="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" relationship="CREATE">
+      <point x="-216.49972945025593" y="3.918972472547466E-4" />
+      <point x="2133.0" y="528.113" />
+      <point x="2133.0" y="740.174" />
+      <point x="-216.49985573996264" y="1.7430542561669427E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.server.MatchController" relationship="CREATE">
+      <point x="0.0" y="105.5" />
+      <point x="2964.4884590936504" y="301.051" />
+      <point x="-193.0" y="-140.20892493054788" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.NetworkGamesManager" target="it.polimi.ingsw.network.GameSettings" relationship="TO_MANY">
+      <point x="-129.49967521967665" y="2.2627576640843472E-5" />
+      <point x="3277.0" y="-506.477" />
+      <point x="3277.0" y="750.0" />
+      <point x="3039.488" y="750.0" />
+      <point x="-4.590936505337595E-4" y="-105.50004328639591" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.network.GameSettings" relationship="TO_ONE">
+      <point x="-192.99989534072392" y="7.506945212298888E-5" />
+      <point x="3277.0" y="441.26" />
+      <point x="3277.0" y="750.0" />
+      <point x="3039.488" y="750.0" />
+      <point x="-4.590936505337595E-4" y="-105.50004328639591" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameSave" target="it.polimi.ingsw.network.GameSettings" relationship="TO_ONE">
+      <point x="1.8069914403895382E-5" y="-118.00004328639591" />
+      <point x="3464.916" y="750.0" />
+      <point x="3039.488" y="750.0" />
+      <point x="-4.590936505337595E-4" y="-105.50004328639591" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="TO_ONE">
+      <point x="-193.0" y="181.35288739865518" />
+      <point x="216.5" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.server.IConnectionManager" relationship="TO_ONE">
+      <point x="-192.99989534072392" y="-203.75992493054787" />
+      <point x="3299.0" y="237.5" />
+      <point x="3299.0" y="-28.846000000000004" />
+      <point x="-221.00047382243474" y="3.181624771286806E-5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.TCPConnectionManager" target="it.polimi.ingsw.server.IConnectionManager" relationship="REALIZATION">
+      <point x="-221.0" y="-8.587455466716762" />
+      <point x="221.0" y="0.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" target="it.polimi.ingsw.server.gamephases.SetUpTurn" relationship="CREATE">
+      <point x="-216.49993330320422" y="14.999739121782568" />
+      <point x="2133.0" y="1179.296" />
+      <point x="2133.0" y="1316.357" />
+      <point x="2111.5" y="1316.357" />
+      <point x="2111.5" y="230.76" />
+      <point x="2360.884" y="230.76" />
+      <point x="2360.884" y="211.0" />
+      <point x="2375.884" y="211.0" />
+      <point x="2.705497440729232E-4" y="-67.50039051093137" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" target="it.polimi.ingsw.server.gamephases.GameEnded" relationship="CREATE">
+      <point x="-216.49993330320422" y="-15.796260878217481" />
+      <point x="2152.0" y="1148.5" />
+      <point x="2152.0" y="1376.357" />
+      <point x="-216.49993330320422" y="-4.784700390700891E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.Server" target="it.polimi.ingsw.server.GameController" relationship="TO_MANY">
+      <point x="12.047012445505061" y="168.0" />
+      <point x="15.0" y="-105.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.GameController" target="it.polimi.ingsw.network.GameSettings" relationship="TO_ONE">
+      <point x="166.49954090634947" y="-4.666995065534252E-4" />
+      <point x="3277.0" y="-37.653" />
+      <point x="3277.0" y="750.0" />
+      <point x="3039.488" y="750.0" />
+      <point x="-4.590936505337595E-4" y="-105.50004328639591" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.server.ClientMessageSubscriber" relationship="REALIZATION">
+      <point x="193.0" y="15.0" />
+      <point x="4082.4565675917" y="456.25992493054787" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.SetUpTurn" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50027054974407" y="-3.9051093136777126E-4" />
+      <point x="2613.0" y="316.051" />
+      <point x="2613.0" y="437.5" />
+      <point x="2645.0" y="437.5" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50006669679578" y="-2.6087821743203676E-4" />
+      <point x="2645.0" y="1164.296" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" target="it.polimi.ingsw.server.gamephases.IGamePhase" relationship="REALIZATION">
+      <point x="216.50014426003736" y="1.7430542561669427E-4" />
+      <point x="2613.0" y="740.174" />
+      <point x="2613.0" y="437.5" />
+      <point x="2645.0" y="437.5" />
+      <point x="2645.0" y="622.613" />
+      <point x="-216.50038700478535" y="1.876707970041025E-4" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature" target="it.polimi.ingsw.server.gamephases.PlayerTakesCloud" relationship="CREATE">
+      <point x="0.0" y="67.5" />
+      <point x="0.0" y="-67.5" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.MatchController" target="it.polimi.ingsw.server.GameSave" relationship="CREATE">
+      <point x="0.0" y="218.0" />
+      <point x="47.911913410638135" y="-118.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.TCPConnectionManager" target="it.polimi.ingsw.server.TCPClient" relationship="TO_MANY">
+      <point x="5.342706211383302" y="-155.5" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="it.polimi.ingsw.server.gamephases.PlayerMoveStudents" target="it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature" relationship="CREATE">
+      <point x="13.99607756324167" y="67.5" />
+      <point x="0.0" y="-67.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4956896551724141" showDependencies="true" x="3421.8608695652165" y="289.48695652173865" />
+  <SelectedNodes>
+    <node>it.polimi.ingsw.server.gamephases.IGamePhase</node>
+    <node>it.polimi.ingsw.server.gamephases.GameEnded</node>
+    <node>it.polimi.ingsw.server.gamephases.PlayerMoveStudents</node>
+    <node>it.polimi.ingsw.server.MatchController</node>
+    <node>it.polimi.ingsw.server.TCPConnectionManager</node>
+    <node>it.polimi.ingsw.server.IConnectionManager</node>
+    <node>it.polimi.ingsw.server.Client</node>
+    <node>it.polimi.ingsw.server.TCPClient</node>
+    <node>it.polimi.ingsw.server.NetworkGamesManager</node>
+    <node>it.polimi.ingsw.server.GameController</node>
+    <node>it.polimi.ingsw.server.ClientMessageSubscriber</node>
+    <node>it.polimi.ingsw.server.gamephases.PlayerMoveMotherNature</node>
+    <node>it.polimi.ingsw.server.gamephases.GameStarting</node>
+    <node>it.polimi.ingsw.server.GameSave</node>
+    <node>it.polimi.ingsw.server.gamephases.Preparation</node>
+    <node>it.polimi.ingsw.server.Configuration</node>
+    <node>it.polimi.ingsw.network.GameSettings</node>
+    <node>it.polimi.ingsw.server.gamephases.PlayerTakesCloud</node>
+    <node>it.polimi.ingsw.server.gamephases.SetUpTurn</node>
+    <node>it.polimi.ingsw.server.ServerApp</node>
+    <node>it.polimi.ingsw.network.messages.Message</node>
+    <node>it.polimi.ingsw.server.Server</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

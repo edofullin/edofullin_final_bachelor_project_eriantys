@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="anchorMain" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/island.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.IslandController">
+   <children>
+      <GridPane fx:id="mainGP" gridLinesVisible="true" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="80.0">
+        <columnConstraints>
+          <ColumnConstraints percentWidth="20.0" />
+            <ColumnConstraints percentWidth="20.0" />
+            <ColumnConstraints percentWidth="20.0" />
+            <ColumnConstraints percentWidth="20.0" />
+          <ColumnConstraints percentWidth="20.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints percentHeight="50.0" />
+          <RowConstraints percentHeight="50.0" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
